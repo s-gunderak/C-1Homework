@@ -7,8 +7,12 @@ Console.Clear();
 
 Console.WriteLine("Введите число:");
 int N = int.Parse(Console.ReadLine());
-int count = 1;
-
+int count = 2;
+if (N < 2)
+{
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.WriteLine("В заданном диапазоне отсутствуют четные числа. Введите число больше 1");
+}
 while (count < N)
 {
     if (count % 2 == 0)
