@@ -21,4 +21,3 @@ if (count == N)
 {
     Console.Write($"{count}");
 }
-Console.Write(".");
